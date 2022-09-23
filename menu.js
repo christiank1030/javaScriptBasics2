@@ -224,6 +224,9 @@ let filterByProperty = (property, number, type) => {
    if(type === 'above') {
     filteredArr = foodArr.filter((pizzaObj) => pizzaObj[property] > number)
    }
+   else {
+    filteredArr = foodArr.filter((pizzaObj) => pizzaObj[property] < number)
+   }
 
    return filteredArr;
 }

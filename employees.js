@@ -55,7 +55,7 @@ let empOne = new Employee('Jess', 'weekday mornings, weekday afternoons')
 
 //CODE HERE
 
-console.log(getSchedule(empOne));
+console.log(empOne.getSchedule());
 
 
 /*
