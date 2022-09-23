@@ -177,7 +177,6 @@ const filteredFood = foodArr.filter((element) => {
 
 console.log(filteredFood);
 
-
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -220,11 +219,13 @@ console.log(filteredFood);
 //CODE HERE
 
 let filterByProperty = (property, number, type) => {
-   let filteredArr = foodArr.filter((element) => {
-    
-    })
+   let filteredArr = []
+   
+   if(type === 'above') {
+    filteredArr = foodArr.filter((pizzaObj) => pizzaObj[property] > number)
+   }
 
-   return filteredArr
+   return filteredArr;
 }
 
 /*
@@ -235,3 +236,5 @@ let filterByProperty = (property, number, type) => {
 */
 
 //CODE HERE
+
+console.log(filterByProperty('rating', 7, 'above'));
