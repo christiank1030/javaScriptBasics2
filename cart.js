@@ -88,6 +88,12 @@ console.log(calcFinalPrice(26.97, 3, 6))
 /*
     TEXT ANSWER HERE
 
+    Customer object properties:
+    - customerName (string)
+    - phoneNumber (string)
+    - order (string)
+    - orderTotal (number)
+
 */
 
 /*
@@ -96,3 +102,11 @@ console.log(calcFinalPrice(26.97, 3, 6))
 */
 
 //CODE HERE
+
+let customerObj = {
+    customerName: 'John',
+    phoneNumber: '3026571349',
+    order: 'Pepperoni',
+    orderTotal: 9.99
+}
+
