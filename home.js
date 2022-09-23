@@ -135,13 +135,9 @@ const deals = [
 
 //CODE HERE
 
-let newDeal = (element) => {
-    element = element['title'].replace('15', '10');
+deals[0].title = deals[0].title.replace('15', '10');
 
-    return element
-}
-
-console.log(newDeal(deals));
+console.log(deals[0]);
 
 /*
     The restaurant is going to continue its
